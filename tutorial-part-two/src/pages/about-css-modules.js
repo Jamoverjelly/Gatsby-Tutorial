@@ -6,10 +6,10 @@ console.log(styles);
 
 const User = props => (
   <div className={styles.user}>
-    <img src={props.avatar} className={styles.avatar} alt="" />
+    <img src={props.avatar} className={styles.avatar} alt=""/>
     <div className={styles.description}>
-     <h2 className={styles.username}>{props.username}</h2>
-     <p className={styles.excerpt}>{props.excerpt}</p>
+      <h2 className={styles.username}>{props.username}</h2>
+      <p className={styles.excerpt}>{props.excerpt}</p>
     </div>
   </div>
 )
@@ -19,14 +19,14 @@ export default () => (
     <h1>About CSS Modules</h1>
     <p>CSS Modules are cool</p>
     <User
-      username="Jamie Strausbaugh"
-      avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
-      excerpt="I'm Jamie Strausbaugh, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
-    />
-    <User
       username="Emily Devereaux"
       avatar="https://s3.amazonaws.com/uifaces/faces/twitter/adellecharles/128.jpg"
       excerpt="I'm Emily Devereaux. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
+    />
+    <User
+      username="Jamie Strausbaugh"
+      avatar="https://s3.amazonaws.com/uifaces/faces/twitter/vladarbatov/128.jpg"
+      excerpt="I'm Jamie Strausbaugh, a vertically aligned type of guy. Lorem ipsum dolor sit amet, consectetur adipisicing elit."
     />
   </Container>
 )
